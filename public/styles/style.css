@@ -1,27 +1,14 @@
 .tp {
+    opacity: 0;
     position: relative;
+    animation: fadeInAnimation;
 }
-
-.tp::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.tp::before {
-    background: rgb(254 249 195);
-    animation: typerwriter 4s steps(32) ease forwards;
-}
-
-@keyframes typewriter {
-    to {
-        left: 100%;
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
     }
-}
-
-.sub {
-
+    100% {
+        opacity: 1;
+    }
 }
