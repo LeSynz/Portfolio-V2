@@ -1,0 +1,14 @@
+.tp::before {
+    background: rgb(254 249 195);
+    animation: typerwriter 4s steps(32) ease forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+.sub {
+
+}
