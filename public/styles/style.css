@@ -1,14 +1,36 @@
-.tp::before {
-    background: rgb(254 249 195);
-    animation: typerwriter 4s steps(32) ease forwards;
-}
+/* Add this to your CSS file or use a CSS framework like Tailwind CSS */
 
-@keyframes typewriter {
-    to {
-        left: 100%;
+.typewriter {
+    overflow: hidden; /* Hide the text initially */
+    white-space: nowrap; /* Keep the text on one line */
+    border-right: 2px solid #000; /* Add a blinking cursor effect */
+    animation: typewriter 4s steps(40) infinite; /* Animate the text */
+  }
+  
+  @keyframes typewriter {
+    0% {
+      width: 0; /* Start with no text visible */
     }
-}
-
-.sub {
-
-}
+    90% {
+      width: 100%; /* Show the entire text */
+    }
+    100% {
+      border-right: 2px solid transparent; /* Remove the cursor effect at the end */
+    }
+  }
+  
+  .cursor {
+    animation: cursor 1s infinite; /* Animate the cursor effect */
+  }
+  
+  @keyframes cursor {
+    0% {
+      border-right: 2px solid #000; /* Show the cursor effect */
+    }
+    50% {
+      border-right: 2px solid transparent; /* Hide the cursor effect */
+    }
+    100% {
+      border-right: 2px solid #000; /* Show the cursor effect again */
+    }
+  }
