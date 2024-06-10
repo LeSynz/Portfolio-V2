@@ -1,6 +1,5 @@
 .tp {
     opacity: 0;
-    position: relative;
     animation: fadeInAnimation ease 2s forwards;
 }
   
